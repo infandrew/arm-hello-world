@@ -11,7 +11,7 @@ void print_uart0(const char *s)
 void c_entry() {
     int i;
     unsigned int r=0;
-    for (i=0;i<212345678;i++)r+=i;
+    for (i=0;i<2123456789;i++)r+=i;
     char greet[] = "Hello World xxxxxxxx\n";
     for (i=0;i<8;i++) {
         greet[i+12]=(r%16 <= 9)? r%16 + '0': r%16 + 'a' - 10;
